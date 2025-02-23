@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family:'Poppins', sans-serif;
+
+}
+
+:root{
+
+    --bg-color:#081b29;
+    --second-bg-color: #112e42;
+    --text-color:#ededed;
+    --main-color: #00abf0;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+    padding-bottom: 6rem;
+}
+/* .header {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+} */
+
+.home-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+}
+
+.home-img .circle-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 105%;
+    height: 105%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--bg-color);
+    border-bottom: .2rem solid var(--bg-color);
+    border-left: .8rem double var(--second-bg-color);
+    border-right: .8rem double var(--second-bg-color);
+    animation: aboutSpinner .8s linear infinite;
+
+}
+.home-img .circle-spin-in{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    border-top: .2rem solid orange;
+    border-bottom: .2rem solid orange;
+    border-left: .2rem solid var(--bg-color);
+    border-right: .2rem solid var(--bg-color);
+    animation: aboutSpinner .5s reverse infinite;
+
+}
+
+.home-img .circle-spin-in2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border-top: .2rem solid green;
+    border-bottom: .2rem solid green;
+    border-left: .2rem solid var(--bg-color);
+    border-right: .2rem solid var(--bg-color);
+    animation: aboutSpinner 1s linear infinite;
+
+}
+
+.home-img .circle-spin-in3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--bg-color);
+    border-bottom: .2rem solid var(--bg-color);
+    border-left: .2rem solid red;
+    border-right: .2rem solid red;
+    animation: aboutSpinner 1s reverse infinite;
+
+}
+
+.home-img .circle-spin-in4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--main-color);
+    border-bottom: .2rem solid var(--main-color);
+    border-left: .2rem solid var(--bg-color);
+    border-right: .2rem solid var(--bg-color);
+    animation: aboutSpinner .8s linear infinite;
+
+}
+
+
+@keyframes aboutSpinner{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* @keyframes aboutSpinner2 {
+    100%{
+        transform: translate(-50%, -50) rotate(360deg);
+    }
+    
+} */
